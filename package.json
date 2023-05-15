@@ -4,13 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "parcel serve src/index.html --public-url /balex",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html --public-url /balex/",           
         "deploy": "gh-pages -d dist",
         "predeploy": "npm run build"
     },
     "keywords": [],
-    "author": "",
+    "author": "SerhVo",
     "license": "ISC",
     "homepage": "https://serhvo.github.io/balex",
     "devDependencies": {
@@ -26,6 +26,8 @@
         "jquery": "^3.6.4",
         "modern-normalize": "^1.1.0",
         "slick-carousel": "^1.8.1",
-        "tabs": "^0.2.0"
+        "tabs": "^0.2.0",
+        "gh-pages": "^5.0.0"
+  
     }
 }
