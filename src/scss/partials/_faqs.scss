@@ -1,0 +1,70 @@
+.faqs-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.faqs-li {
+    width: 31%;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px)  {
+        margin-bottom: 50px;
+    }
+     @media only screen and (max-device-width: 767px) {
+    width: 45%;
+    margin-bottom: 10px;
+    }
+
+}
+
+.faqs-li>img {
+    width: 100%;
+    /* Ширина картинки занимает всю ширину рамки */
+    height: fit-content;
+    object-fit: cover;
+    /* Вписывает картинку в рамку с сохранением пропорций и обрезкой лишнего */
+}
+
+
+.faqs-li-text {
+    font-size: 16px;
+    margin: 10px 0 16px 0;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px)  {
+        font-size: 14px;
+        margin: 8px 0 12px 0;
+    }
+
+     @media only screen and (max-device-width: 767px) {
+        font-size: 12px;
+    margin: 5px 0 8px 0;    
+    }
+}
+
+.faqs-btn {
+    padding: 15px;
+    margin-bottom: 16px;
+    background-color: $bordo;
+    transition: background-color 0.3s ease;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px)  {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+    padding: 7px;
+    margin-bottom: 5px;  
+    }
+}
+
+.faqs-btn:focus,
+.faqs-btn:hover {
+    color: $white;
+    background-color: $green-main;
+}

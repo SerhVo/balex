@@ -1,0 +1,148 @@
+.pos-rel {
+    position: relative;
+}
+
+.contact_box {
+    // width: 387px;
+    position: absolute;
+    top: 0;
+    height: 480px;
+    background-color: #757575;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #757575;
+    color: $white;
+    padding: 15px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        height: 375px;
+        padding: 12px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        padding: 5px;
+    }
+}
+
+
+
+.contact_box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 194px solid $transparent;
+    border-right: 194px solid $transparent;
+    border-top: 34px solid #757575;
+    position: absolute;
+    bottom: -34px;
+    right: 0px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        border-left: 149px solid $transparent;
+        border-right: 149px solid $transparent;
+        border-top: 28px solid #757575;
+        bottom: -28px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        border-left: 119px solid $transparent;
+        border-right: 118px solid $transparent;
+        border-top: 18px solid #757575;
+        bottom: -18px;
+    }
+}
+
+.contact_box-h3 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    display: table;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 14px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+}
+
+.contact_box-h3::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $bordo;
+
+    margin-top: 15px;
+    position: absolute;
+    top: 50px;
+    left: 57px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        width: 40px;
+        height: 2px;
+        margin-top: 12px;
+        top: 39px;
+        left: 30px;
+    }
+}
+
+.contact_box p {
+    text-align: center;
+    font-size: 14px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.contact_box-h5 {
+    text-align: left;
+    width: 357px;
+    font-size: 16px;
+    color: $bordo;
+    text-transform: uppercase;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 14px;
+        width: 275px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contact_box-h5>i {
+    color: $bordo;
+    margin: 10px;
+}
+
+
+.pt-40 {
+    padding-top: 40px !important;
+
+    @media only screen and (max-width: 767px) {
+        padding-top: 90px !important;
+    }
+}

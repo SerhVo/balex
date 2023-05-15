@@ -1,0 +1,20 @@
+// Импортировать весь Bootstrap CSS
+@import "~bootstrap/scss/bootstrap";
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import './base/variables';
+
+@import './base/mixin';
+@import './base/base-drop';
+@import './base/global-apps';
+@import './partials/header';
+@import './partials/hero';
+@import './partials/our_record';
+@import './partials/our_speciality';
+@import './partials/history';
+@import './partials/services-tab';
+@import './partials/faqs';
+@import './partials/testimonials';
+@import './partials/our_partners';
+@import './partials/home_contact_details';
+@import './partials/feedback';
+@import './partials/footer';

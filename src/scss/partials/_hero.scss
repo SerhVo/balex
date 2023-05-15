@@ -1,0 +1,87 @@
+.hero__container_bx {
+    background-image: url('../images/Bread2-scaled-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 770px;
+    display: flex;
+    align-items: center;
+
+    // padding: calc((90vh - 190px)/2) 0;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        height: 40vh;
+    }
+    @media only screen and (max-device-width: 767px) {
+        height: 50vh;
+    }
+}
+
+.hero__container_bx-text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        margin-right: 60px;
+    }
+}
+
+.hero__container_bx-h1 {
+    padding: 15px;
+    background-color: $bordo;
+    color: $white;
+    font-size: 35px;
+    // max-width: 600px;
+    text-align: right;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        padding: 10px;
+        background-color: $bordo;
+        color: $white;
+        font-size: 30px;
+        // max-width: 600px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+.hero__container_bx-p {
+    padding: 10px;
+    color: $main-text-color;
+    font-size: 20px;
+    text-align: right;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        font-size: 14px;
+        padding: 3px;
+    }
+}
+
+
+/* Стили для анимации */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bottom-to-top li {
+    opacity: 0;
+    animation: fade-in 1.7s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+

@@ -1,0 +1,107 @@
+.section_speciality-bg {
+    background-image: url('../images/specialitybg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 50vh;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        height: 30vh;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        height: 40vh;
+    }
+}
+
+.our_speciality-pos {
+    position: relative;
+
+    @media only screen and (max-device-width: 767px) {
+        margin: 0 30px;
+    }
+}
+
+.our_speciality-list {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+
+    // @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    //     padding-top: 80px;
+    // }
+}
+
+.our_speciality-li {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 416px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 3px solid $grey;
+    background-color: $white;
+    text-align: center;
+    margin-left: 15px;
+    transition: background-color 0.5s ease;
+
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        margin-left: 10px;       
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        padding: 10px;
+        height: 370px;
+    }
+
+}
+
+.our_speciality-li:hover {
+    background-color: $green_main;
+}
+
+.our_speciality-li:hover>.our_speciality-h3 {
+    color: $white;
+}
+
+.our_speciality-li:hover>.our_speciality-p {
+    color: $white;
+}
+
+
+
+
+.our_speciality-h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 15px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        font-size: 14px;
+
+    }
+}
+
+.our_speciality-p {
+    font-size: 16px;
+    letter-spacing: 0.02;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

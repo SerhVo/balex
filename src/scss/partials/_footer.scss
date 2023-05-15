@@ -1,0 +1,223 @@
+.footer-bg {
+    background-color: $black;
+}
+
+
+.footer-content {
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    @media only screen and (max-device-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.footer-content>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer_work-time-box {
+    @media only screen and (max-device-width: 767px) {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        margin: 15px 0;
+    }
+
+
+
+}
+
+.footer-content-img {
+    width: 270px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        width: 190px;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        width: 80%;
+    }
+}
+
+.footer_timetable-h3 {
+    color: $white;
+
+}
+
+.footer_timetable-p {
+    color: $white;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 13px;
+    }
+}
+
+.footer_top-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    color: $green-main;
+    font-weight: 400;
+    padding-bottom: 17px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 15px;
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+    }
+}
+
+.footer_top-title::after {
+    content: "";
+    position: absolute;
+    background-color: $green-main;
+    height: 2px;
+    width: 50px;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.block_patriot {
+
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        margin-top: 40px;
+    }
+}
+
+.flag {
+    width: 10px;
+    height: 80px;
+    background-image: linear-gradient(rgb(0, 217, 255) 50%, yellow 50%);
+    margin-right: 15px;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        width: 6px;
+        height: 65px;
+        margin-right: 10px;
+    }
+}
+
+.block_patriot-text {
+    font-size: 20px;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: left;
+    font-weight: 500;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 15px;
+    }
+}
+
+.block_patriot-h2 {
+    font-size: 30px;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: left;
+    font-weight: 500;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 25px;
+    }
+}
+
+.footer_box3-li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        margin: 16px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 14px 0;
+    }
+}
+
+.footer-i {
+    color: $green-main;
+    margin-right: 20px;
+}
+
+.footer_box3-li>p {
+    font-size: 14px;
+    font-weight: 300;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.footer_copy {
+    text-align: center;
+    color: $lightgray;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid $grey;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        padding: 10px 0;
+    }
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+
+    .block_patriot {
+        width: 250px;
+        margin-top: 0;
+    }
+
+    .flag {
+        width: 8px;
+        height: 55px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .block_patriot-text {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .block_patriot-h2 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .footer_timetable-p {
+        font-size: 15px;
+        width: 150px;
+        margin-right: 10px;
+    }
+
+}

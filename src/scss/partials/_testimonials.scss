@@ -1,0 +1,180 @@
+.testimonials-bg {
+    background-image: url('../images/podlozhka-kond-scaled.jpg');
+    // height: 100vh;
+    background-size: cover;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.video-carousel {
+    margin-top: 30px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-carousel .slick-prev,
+.video-carousel .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: $transparent;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+
+    @media only screen and (max-width: 767px) {
+        top: 20%;
+    }
+}
+
+.video-carousel .slick-prev {
+    left: 10px;
+    padding-right: 5px;
+
+    @media only screen and (max-width: 767px) {
+        left: 0px;
+    }
+}
+
+.video-carousel .slick-next {
+    right: 10px;
+    padding-left: 5px;
+
+    @media only screen and (max-width: 767px) {
+        right: 0px;
+    }
+}
+
+.video-carousel .slick-dots {
+    position: absolute;
+    // bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+}
+
+.video-carousel .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.video-carousel .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 767px) {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+.video-carousel .slick-dots li button:hover,
+.video-carousel .slick-dots li button:focus {
+    background-color: #fff;
+    outline: none;
+}
+
+.video-carousel .slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+.video-carousel-li {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-carousel-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .video-carousel-div iframe {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+}
+
+.video-carousel-text {
+    font-size: 16px;
+    color: $white;
+    margin-bottom: 50px;
+    margin-top: 16px;
+    text-align: center;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+.video-carousel-dist {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.video-carousel-h4 {
+    text-align: center;
+    font-size: 15px;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
