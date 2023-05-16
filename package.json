@@ -26,8 +26,6 @@
         "jquery": "^3.6.4",
         "modern-normalize": "^1.1.0",
         "slick-carousel": "^1.8.1",
-        "tabs": "^0.2.0",
-        "gh-pages": "^5.0.0"
-  
-    }
+        "tabs": "^0.2.0"     
+      }
 }
