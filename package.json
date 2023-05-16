@@ -4,11 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "parcel src/index.html",
-        "start": "parcel build src/index.html --public-url /balex/",
+        "dev": "parcel src/*.html",
+        "start": "parcel src/*.html",
+        "build": "parcel build src/*.html --public-url /balex/",
         "deploy": "gh-pages -d dist",
         "predeploy": "npm run build"
-    },    
+    },
     "keywords": [],
     "author": "SerhVo",
     "license": "ISC",
@@ -26,7 +27,6 @@
         "jquery": "^3.6.4",
         "modern-normalize": "^1.1.0",
         "slick-carousel": "^1.8.1",
-        "tabs": "^0.2.0",
-        "gh-pages": "^5.0.0"
+        "tabs": "^0.2.0"
     }
 }
