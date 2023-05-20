@@ -1,3 +1,4 @@
+let counter = 0;
 // Получаем все элементы с классом "counter"
 const counters = document.querySelectorAll(".counter");
 const animationDuration = 3000;
@@ -40,3 +41,4 @@ counters.forEach(counter => {
 counters.forEach(counter => {
   observer.observe(counter);
 });
+
