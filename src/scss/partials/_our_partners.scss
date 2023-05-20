@@ -8,12 +8,12 @@
 .slick-slide img {
     display: block;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
         width: 90%;
         height: auto;
         }
 
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         width: 90%;
         height: auto;
     }
@@ -21,7 +21,7 @@
 }
 
 .slick-next {
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         right: 0px;
     }
 }
@@ -29,7 +29,7 @@
 
 
 .slick-prev {
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         left: 0px;
     }
 }
@@ -37,7 +37,7 @@
 .pb40 {
     padding-bottom: 40px;
 
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         padding-bottom: 20px;
     }
 }
@@ -46,12 +46,12 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }

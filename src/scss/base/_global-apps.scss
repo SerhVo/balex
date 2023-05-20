@@ -8,6 +8,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
     // transform: translateZ(0);
     color: $main-text-color;

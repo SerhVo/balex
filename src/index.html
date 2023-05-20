@@ -21,8 +21,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="scss/styles.scss">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -68,7 +67,10 @@
                     <li><a href="./" class="nav__item">ГОЛОВНА</a></li>
                     <li><a href="#our_record" class="nav__item">ПРО НАС</a></li>
                     <li><a href="#services-tab" class="nav__item">ГРУПА КОМПАНIЙ</a></li>
-                    <li><a href="#contacts" class="nav__item">КОНТАКТНА IНФОРМАЦIЯ</a></li>
+                    <li><a href="#contacts" class="nav__item"
+                            onclick="setTimeout(function(){location.href='#contacts';}, 100); return false;">КОНТАКТНА
+                            IНФОРМАЦIЯ</a>
+                    </li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle">
@@ -177,6 +179,42 @@
                         </li>
                     </ul>
                 </div>
+
+                
+                    <!-- <ul class="our_speciality-list2">
+                        <li class="our_speciality-li2">
+                            <h3>Традиції</h3>
+                            <p>У різні роки нашими підприємствами керувало багато видатних
+                                людей! І
+                                не зважаючи на низку
+                                змін, компанії завжди могли пишатися якістю своєї продукції, про що свідчать золоті
+                                медалі
+                                та нагороди міжнародних виставок. Сьогодні ми продовжуємо дотримуватися вікових традицій
+                                розвитку виробництва і торгівлі задля досягнення гармонії у відносинах з людьми,
+                                бізнесом і
+                                світом.</p>
+                        </li>
+                        <li class="our_speciality-li2">
+                            <h3>Розвиток</h3>
+                            <p>BALEX company - це група Українських компаній, які динамічно
+                                розвиваються,
+                                поєднуючи досвід та передові технології виробництва. Для постійного зростання та
+                                сталого успіху наших клієнтів ми пропонуємо широкий комплекс товарів і повну
+                                технологічну підтримку. Впроваджені на підприємствах групи сучасні системи
+                                безпеки та управління є гарантією завжди якісного та стабільного результату.</p>
+                        </li>
+                        <li class="our_speciality-li2">
+                            <h3>Гармонія</h3>
+                            <p>Одна з головних місій групи компаній BALEX - дарувати людям
+                                смачне
+                                задоволення,
+                                наповнюючи життя первісною енергією Природи. Саме тут традиційні рецепти за
+                                допомогою сучасних технологій та новітнього обладнання перетворюються на якісний
+                                продукт, що відповідає світовому рівню, задовільняє потреби професійних
+                                споживачів та надає можливість створювати власні шедеври вдома.</p>
+                        </li>
+                    </ul> -->
+                
             </div>
         </section>
 
@@ -215,7 +253,7 @@
                     <div class="tab-panes">
                         <div class=" tab-pane active">
                             <h3 class="tab-pane-h3">Сьогодення</h3>
-                            <p class="tab-pane-p fade-in">Нас не зупинити  і сьогодні ми – це: </p>
+                            <p class="tab-pane-p fade-in">Нас не зупинити і сьогодні ми – це: </p>
                         </div>
                         <div class="tab-pane">
                             <h3 class="tab-pane-h3">2022</h3>
@@ -822,28 +860,23 @@
                         <h3 class="contact_box-h3">Контактна інформація</h3>
                     </li>
                     <li>
-
                         <div>
                             <h5 class="contact_box-h5"><i class="fas fa-home"></i>Адреса</h5>
                         </div>
                         <p>Проспект Героїв Харкова, 135-А, <br> Харків, Україна, 61001</p>
                     </li>
                     <li>
-
                         <div>
                             <h5 class="contact_box-h5"><i class="fas fa-phone"></i>Телефон</h5>
                         </div>
                         <p><a href="tel:+38(099)-675-43-23">+38 099-675-43-23</a>,<br><a
-                                href="tel:+38(057)732-49-37">+38
-                                (057) 732-49-37</a></p>
+                                href="tel:+38(057)732-49-37">+38 (057) 732-49-37</a></p>
                     </li>
                     <li>
-
                         <h5 class="contact_box-h5"><i class="fas fa-envelope"></i>E-mail</h5>
                         <p><a href="mailto:info@goldenmile.com.ua">info@goldenmile.com.ua</a></p>
                     </li>
                     <li>
-
                         <h5 class="contact_box-h5"><i class="far fa-clock"></i>Робочі години</h5>
                         <p>ПН-ПТ: 08:00-17:00</p>
                     </li>
@@ -956,14 +989,14 @@
             <p class="footer_copy">&copy; 2023 BALEX Company | All Rights Reserved.</p>
         </div>
     </footer>
-    
+
     <a href="#" class="to-top">
         <i class="fas fa-chevron-up"></i>
     </a>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

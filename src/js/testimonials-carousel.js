@@ -19,10 +19,11 @@ const observer = new IntersectionObserver(entries => {
                     arrows: true,
                     dots: true,
                 });
-            });;
-        } else {
-            stopCarousel();
-        }
+            });
+        } 
+        // else {
+        //     stopCarousel();
+        // }
     });
 });
 

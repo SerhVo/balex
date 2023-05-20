@@ -7,20 +7,22 @@ $(function () {
                 breakpoint: 1199, // Планшет
                 settings: {
                     slidesToShow: 2, // Количество отображаемых слайдов на планшете
+                    slidesToScroll: 1, // Исправление: Установка slidesToScroll на 1
                     autoplay: true,
                     autoplaySpeed: 3000,
                     arrows: false,
                 }
             },
-            {
-                breakpoint: 767, // Мобильное устройство
+{
+                breakpoint: 799, // Планшет
                 settings: {
-                    slidesToShow: 1, // Количество отображаемых слайдов на мобильном устройстве
+                    slidesToShow: 1, // Количество отображаемых слайдов на планшете
+                    slidesToScroll: 1, // Исправление: Установка slidesToScroll на 1
                     autoplay: true,
                     autoplaySpeed: 3000,
                     arrows: false,
                 }
-            }
+            },
         ]
     });
 });

@@ -5,11 +5,11 @@
     background-size: cover;
     background-attachment: scroll;
     height: 50vh;
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
         height: 30vh;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media (max-device-width: 767px) {
         height: 40vh;
     }
 }
@@ -17,7 +17,7 @@
 .our_speciality-pos {
     position: relative;
 
-    @media only screen and (max-device-width: 767px) {
+    @media (max-device-width: 767px) {
         margin: 0 30px;
     }
 }
@@ -33,15 +33,20 @@
     // @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
     //     padding-top: 80px;
     // }
+
+    @media (max-device-width: 767px) {
+        bottom: -40px;
+    }
 }
 
 .our_speciality-li {
-    display: flex;
+    // display: flex;
     transition: transform 0.3s ease;
+    
     height: 416px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     padding: 30px;
     border-bottom: 3px solid $grey;
     background-color: $white;
@@ -50,13 +55,13 @@
     transition: background-color 0.5s ease;
 
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-device-width: 768px) and (max-device-width: 1199px) {
         margin-left: 10px;       
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-device-width: 767px) {
         padding: 10px;
-        height: 370px;
+        height: 320px;
     }
 
 }
@@ -73,19 +78,16 @@
     color: $white;
 }
 
-
-
-
 .our_speciality-h3 {
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 600;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
         font-size: 15px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media (max-device-width: 767px) {
         font-size: 14px;
 
     }
@@ -95,12 +97,12 @@
     font-size: 16px;
     letter-spacing: 0.02;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
         font-size: 16px;
         padding: 5px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media (max-device-width: 767px) {
         font-size: 14px;
         padding: 10px;
     }
