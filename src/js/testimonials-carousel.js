@@ -1,5 +1,5 @@
-
-
+import $ from 'jquery';
+import 'slick-carousel';
 
 // Получаем элемент карусели
 const videoCarousel = document.querySelector('.video-carousel');

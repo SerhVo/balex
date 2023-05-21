@@ -1,3 +1,7 @@
+import $ from 'jquery';
+import 'slick-carousel';
+
+
 // Получаем элемент карусели
 const carousel = document.querySelector('#our-partners-carousel');
 

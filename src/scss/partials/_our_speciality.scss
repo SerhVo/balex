@@ -4,10 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 50vh;
+    height: 60vh;
 
     @media (min-width: 768px) and (max-width: 1199px) {
-        height: 30vh;
+        height: 50vh;
     }
 
     @media (max-width: 767px) {
@@ -47,7 +47,7 @@
 .our_speciality-li {
     // display: flex;
     transition: transform 0.3s ease;
-
+    overflow: hidden;
     height: 416px;
     padding: 30px;
     border-bottom: 3px solid $grey;

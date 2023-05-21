@@ -1,3 +1,4 @@
+
 .bg-site_top {
     background: rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
 }
@@ -318,7 +319,7 @@ body.open-menu, html.open-menu {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .mobile-menu-toggle {
         display: block;
         position: absolute;

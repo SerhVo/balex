@@ -1,7 +1,7 @@
-let counter = 0;
 // Получаем все элементы с классом "counter"
 const counters = document.querySelectorAll(".counter");
 const animationDuration = 3000;
+let counter;
 // Создаем экземпляр IntersectionObserver и передаем ему колбэк-функцию
 const observer = new IntersectionObserver(entries => {
   // Перебираем каждый элемент
@@ -29,7 +29,7 @@ counters.forEach(counter => {
   };
 
   updateCounter(); // запускаем анимацию счетчика
-}); // Интервал в миллисекундах между обновлениями счетчика
+}); 
 
       // Удаляем observer после запуска счетчика, чтобы он больше не отслеживал элемент
       observer.unobserve(counter);
@@ -38,7 +38,7 @@ counters.forEach(counter => {
 });
 
 // Перебираем каждый элемент и добавляем его в observer
-counters.forEach(counter => {
-  observer.observe(counter);
+counters.forEach(countElement => {
+  observer.observe(countElement);
 });
 

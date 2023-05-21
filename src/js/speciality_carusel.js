@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import 'slick-carousel';
+
 $(function () {
     $('.our_speciality-list').slick({
         slidesToShow: 3, // Количество отображаемых слайдов на десктопе
@@ -14,7 +17,7 @@ $(function () {
                 }
             },
 {
-                breakpoint: 799, // Планшет
+                breakpoint: 767, // mobile
                 settings: {
                     slidesToShow: 1, // Количество отображаемых слайдов на планшете
                     slidesToScroll: 1, // Исправление: Установка slidesToScroll на 1
