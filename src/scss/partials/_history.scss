@@ -7,12 +7,12 @@
     opacity: 0;
     transform: translateX(40px);
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 25px;
         margin-bottom: 20px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 25px;
         text-align: center;
     }
@@ -45,12 +45,12 @@
     margin-top: 7px;
     display: flex;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         width: 40px;
         height: 2px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         width: 50%;
         height: 2px;
         margin: auto;
@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         flex-direction: row;
         margin: 0;
     }
@@ -73,7 +73,7 @@
 .mm-30 {
     display: flex;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
 
         margin: 30px;
     }
@@ -83,11 +83,11 @@
 .section-heading {
     padding: 40px 0;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         padding: 30px 0;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         padding: 15px 0;
         display: flex;
         flex-direction: column;
@@ -122,11 +122,11 @@
     cursor: pointer;
     transition: $transition;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 45px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;
@@ -135,7 +135,7 @@
 
 .tabs_deck-line>li {
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         margin: 10px 0;
     }
 }
@@ -143,7 +143,7 @@
 .tab_text-breack {
     display: none;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         display: flex;
     }
 }
@@ -151,7 +151,7 @@
 .tab-panes {
     display: flex;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         align-items: center;
     }
 }
@@ -162,11 +162,11 @@
     margin-bottom: 30px;
     transition: $transition;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 16px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 12px;
     }
 }
@@ -178,7 +178,7 @@
 
 
 .tab .active {
-    @media only screen and (max-device-width: 767px) {}
+    @media  (max-width: 767px) {}
 }
 
 
@@ -188,7 +188,7 @@
     user-select: text;
     backface-visibility: hidden;
     
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 12px;
     }
 
@@ -199,7 +199,7 @@
     border-bottom: 3px solid $bordo;
     transition: $transition;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 15px;
         margin: 15px 0;
         color: $bordo;
@@ -218,11 +218,11 @@
     color: $bordo;
     transition: $transition;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 20px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -244,11 +244,11 @@
     transition-delay: 0.2s;
 
     // transition: $transition;
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 15px;
     }
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         margin-left: 10px;
         font-size: 14px;
         border-left: 1px solid $green-main;

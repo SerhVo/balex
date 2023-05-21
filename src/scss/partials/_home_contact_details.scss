@@ -16,12 +16,12 @@
     color: $white;
     padding: 15px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         height: 375px;
         padding: 12px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         height: auto;
         padding: 5px;
     }
@@ -43,14 +43,14 @@
     bottom: -34px;
     right: 0px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         border-left: 149px solid $transparent;
         border-right: 149px solid $transparent;
         border-top: 28px solid #757575;
         bottom: -28px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         border-left: 119px solid $transparent;
         border-right: 118px solid $transparent;
         border-top: 18px solid #757575;
@@ -68,13 +68,13 @@
     font-weight: 500;
     letter-spacing: 2px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 16px;
         font-weight: 400;
         padding-bottom: 14px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 15px;
         font-weight: 400;
         padding-bottom: 10px;
@@ -92,7 +92,7 @@
     top: 50px;
     left: 57px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         width: 40px;
         height: 2px;
         margin-top: 12px;
@@ -105,11 +105,11 @@
     text-align: center;
     font-size: 14px;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 12px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 12px;
     }
 }
@@ -121,12 +121,12 @@
     color: $bordo;
     text-transform: uppercase;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 14px;
         width: 275px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 13px;
         width: 100%;
         text-align: center;
@@ -142,7 +142,7 @@
 .pt-40 {
     padding-top: 40px !important;
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         padding-top: 90px !important;
     }
 }

@@ -87,7 +87,7 @@ a:hover {
     pointer-events: none;
     transition: all .4s;
 
-    @media only screen and (max-device-width: 767px) {
+    @media  (max-width: 767px) {
         width: 40px;
         height: 40px;
     }

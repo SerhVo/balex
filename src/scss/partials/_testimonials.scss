@@ -53,7 +53,7 @@
     cursor: pointer;
     z-index: 1;
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         top: 20%;
     }
 }
@@ -62,7 +62,7 @@
     left: 10px;
     padding-right: 5px;
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         left: 0px;
     }
 }
@@ -71,7 +71,7 @@
     right: 10px;
     padding-left: 5px;
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         right: 0px;
     }
 }
@@ -104,7 +104,7 @@
     cursor: pointer;
     transition: all 0.3s;
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         width: 5px;
         height: 5px;
     }
@@ -133,7 +133,7 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media  (max-width: 767px) {
     .video-carousel-div iframe {
         width: 100%;
         height: auto;
@@ -148,14 +148,14 @@
     margin-top: 16px;
     text-align: center;
 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    @media  (min-width: 768px) and (max-width: 1199px) {
         font-size: 14px;
         font-weight: 300;
         margin-bottom: 20px;
         margin-top: 10px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media  (max-width: 767px) {
         font-size: 12px;
         font-weight: 300;
         margin-bottom: 5px;
