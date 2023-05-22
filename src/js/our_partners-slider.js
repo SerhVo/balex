@@ -2,45 +2,43 @@ import $ from 'jquery';
 import 'slick-carousel';
 
 
-// Получаем элемент карусели
-const carousel = document.querySelector('#our-partners-carousel');
+// const carouselPartners = document.querySelector('.our_partners-list');
 
-// Создаем Intersection Observer
-const observer = new IntersectionObserver(entries => {
-    // entries - это массив объектов IntersectionObserverEntry,
-    // которые содержат информацию о каждом наблюдаемом элементе
 
-    // Проверяем, что элемент на экране
-    if (entries[0].isIntersecting) {
-        // Здесь запускаем карусель, например, используя Slick Slider
-        $('.our_partners-list').slick({
-            arrows: true, // Показывать стрелки для прокрутки
+// const observer = new IntersectionObserver(entries => {
+//     if (entries[0].isIntersecting) {
+        
+        
+//     }
+// }, {
+//     threshold: 0.5 // Срабатывает при видимости элемента на 50%
+// });
 
-            dots: false, // Не показывать точки пагинации
-            infinite: true, // Бесконечная прокрутка
-            slidesToShow: 6, // Сколько слайдов показывать одновременно
-            slidesToScroll: 1, // Сколько слайдов прокручивать за раз
-            autoplay: true, // Автопрокрутка
-            autoplaySpeed: 3000, // Интервал автопрокрутки в миллисекундах
+// // Добавляем элемент карусели в Intersection Observer
+// observer.observe(carouselPartners);
+
+
+$('.our_partners-list').slick({
+            arrows: true, 
+
+            dots: false, 
+            infinite: true,
+            slidesToShow: 6, 
+            slidesToScroll: 1, 
+            autoplay: true, 
+            autoplaySpeed: 3000, 
             responsive: [
                 {
-                    breakpoint: 1199, // Если ширина экрана меньше 768px
+                    breakpoint: 1199, 
                     settings: {
-                        slidesToShow: 4, // Показывать по 2 слайда
+                        slidesToShow: 4, 
                     }
                 },
                 {
-                    breakpoint: 767, // Если ширина экрана меньше 480px
+                    breakpoint: 767,
                     settings: {
-                        slidesToShow: 3, // Показывать по 1 слайду
+                        slidesToShow: 3, 
                     }
                 }
             ]
         });
-    }
-}, {
-    threshold: 0.5 // Срабатывает при видимости элемента на 50%
-});
-
-// Добавляем элемент карусели в Intersection Observer
-observer.observe(carousel);

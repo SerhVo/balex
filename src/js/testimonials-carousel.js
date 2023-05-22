@@ -1,37 +1,68 @@
 import $ from 'jquery';
 import 'slick-carousel';
 
-// Получаем элемент карусели
-const videoCarousel = document.querySelector('.video-carousel');
+$('.video-carousel').slick({
+            arrows: true, 
 
-// Создаем новый экземпляр Intersection Observer
-const observer = new IntersectionObserver(entries => {
-    // Перебираем все записи, возвращенные наблюдателем
-    entries.forEach(entry => {
-        // Если элемент находится в зоне видимости, включаем автопрокрутку
-        if (entry.isIntersecting) {
-            $(function () {
-                $('.video-carousel').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    arrows: true,
-                    dots: true,
-                });
-            });
-        } 
-        // else {
-        //     stopCarousel();
-        // }
-    });
-});
+            dots: true, 
+            infinite: true,
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            autoplay: true, 
+            autoplaySpeed: 3000,             
+        });
 
-// Настраиваем параметры Intersection Observer
-const options = {
-    rootMargin: '0px',
-    threshold: 0.5
-};
 
-// Начинаем наблюдение за элементом карусели
-observer.observe(videoCarousel);
+// const videoCarousel = document.querySelector('video-carousel');
+// // const observer = new IntersectionObserver(entries => {
+//     // entries.forEach(entry => {
+//     //     if (entry.isIntersecting) {
+//     //         $(function () {
+//     //             $('.video-carousel').slick({
+//     //                 slidesToShow: 1,
+//     //                 slidesToScroll: 1,
+//     //                 autoplay: true,
+//     //                 autoplaySpeed: 3000,
+//     //                 arrows: true,
+//     //                 dots: true,
+//     //             });
+//     //         });
+//     //     } 
+//     //     // else {
+//     //     //     stopCarousel();
+//     //     // }
+//     // });
+// // if (entries[0].isIntersecting) {
+// //             $('.video-carousel').slick({
+// //                     slidesToShow: 1,
+// //                     slidesToScroll: 1,
+// //                     autoplay: true,
+// //                     autoplaySpeed: 3000,
+// //                     arrows: true,
+// //                     dots: true,
+// //                 });
+// //     }
+// // }, {
+// //     threshold: 0.5 // Срабатывает при видимости элемента на 50%
+// // });
+// const observer = new IntersectionObserver(entries => {
+//     if (entries[0].isIntersecting) {
+        
+//         $('.video-carousel').slick({
+//             arrows: true, 
+
+//             dots: true, 
+//             infinite: true,
+//             slidesToShow: 1, 
+//             slidesToScroll: 1, 
+//             autoplay: true, 
+//             autoplaySpeed: 3000,             
+//         });
+//     }
+// }, {
+//     threshold: 0.5 // Срабатывает при видимости элемента на 50%
+// });
+
+
+
+// observer.observe(videoCarousel);
