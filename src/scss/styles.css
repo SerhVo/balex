@@ -10914,6 +10914,13 @@ a:hover {
   pointer-events: none;
   transition: all 0.4s;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 27px;
+  }
+}
 @media (max-width: 767px) {
   .to-top {
     width: 30px;
