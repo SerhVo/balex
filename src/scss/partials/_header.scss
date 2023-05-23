@@ -333,6 +333,25 @@ html.open-menu {
         cursor: pointer;
     }
 
+    .mobile-menu-toggle.visibleMobile {
+    height: 40px;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    transition: position 0.3s ease-in-out;
+}
+
+.mobile-menu-toggle.visibleMobile > .bar {
+    background-color: $white;
+}
+
+
     .bar {
         display: block;
         width: 25px;

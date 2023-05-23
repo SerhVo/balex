@@ -1,10 +1,18 @@
 window.addEventListener('scroll', function () {
-    var menu = document.querySelector('.sticky-menu');
-    var scrollPosition = window.scrollY;
+    const menu = document.querySelector('.sticky-menu');
+    const menuMobile = document.querySelector('.mobile-menu-toggle');
+    const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= 30) {
+    if (scrollPosition >= 50) {
         menu.classList.add('visible');
     } else {
         menu.classList.remove('visible');
     }
+
+    if (scrollPosition >= 50) {
+        menuMobile.classList.add('visibleMobile');
+    } else {
+        menuMobile.classList.remove('visibleMobile');
+    }
 });
+

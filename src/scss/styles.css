@@ -10900,7 +10900,7 @@ a:hover {
   background: #8e0404;
   position: fixed;
   bottom: 20%;
-  right: 5%;
+  right: 8%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -10916,8 +10916,9 @@ a:hover {
 }
 @media (max-width: 767px) {
   .to-top {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
   }
 }
 
@@ -11016,7 +11017,7 @@ body.modal-open {
     padding: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .top-bar {
     margin-bottom: 45px;
   }
@@ -11039,7 +11040,7 @@ body.modal-open {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .contact_details {
     flex-wrap: wrap;
     flex-direction: column;
@@ -11050,19 +11051,23 @@ body.modal-open {
 }
 
 .sticky-menu {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 50px;
   z-index: 1;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  transition: top 0.5s ease-in-out;
-  transition-delay: 0.5s;
+  transition: top 0.2s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sticky-menu {
+    top: 30px;
+  }
 }
 
 .sticky-menu.visible {
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .sticky-menu ul {
@@ -11072,7 +11077,7 @@ body.modal-open {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .sticky-menu ul {
     flex-direction: column;
     align-items: flex-start;
@@ -11087,7 +11092,7 @@ body.modal-open {
     margin: 0 5px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .sticky-menu li {
     margin: 20px 10px;
   }
@@ -11163,7 +11168,7 @@ body.modal-open {
     height: 70px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .square-with-triangle {
     top: 133px;
     height: 45px;
@@ -11193,7 +11198,7 @@ body.modal-open {
     bottom: -22px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .square-with-triangle::after {
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
@@ -11239,7 +11244,7 @@ body.modal-open {
     padding: 8px 100px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .nav {
     display: none;
   }
@@ -11265,7 +11270,8 @@ body.modal-open {
   color: #8e0404;
 }
 
-body.open-menu, html.open-menu {
+body.open-menu,
+html.open-menu {
   overflow: hidden;
 }
 
@@ -11323,12 +11329,28 @@ body.open-menu, html.open-menu {
   .mobile-menu-toggle {
     display: block;
     position: absolute;
-    top: -30px;
-    right: 20px;
+    top: 96px;
+    right: 20%;
     z-index: 1;
     background: none;
     border: none;
     cursor: pointer;
+  }
+  .mobile-menu-toggle.visibleMobile {
+    height: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    transition: position 0.3s ease-in-out;
+  }
+  .mobile-menu-toggle.visibleMobile > .bar {
+    background-color: #ffffff;
   }
   .bar {
     display: block;
@@ -11362,7 +11384,7 @@ body.open-menu, html.open-menu {
     height: 50px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .section-pad {
     height: 30px;
   }
@@ -11605,20 +11627,16 @@ body.open-menu, html.open-menu {
 }
 
 .our_speciality-li {
-  transition: transform 0.3s ease;
+  display: flex;
   overflow: hidden;
   height: 416px;
   padding: 30px;
   border-bottom: 3px solid #333333;
   background-color: #ffffff;
   text-align: center;
-  margin-left: 15px;
+  transition: transform 0.3s ease;
   transition: background-color 0.5s ease;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .our_speciality-li {
-    margin-left: 10px;
-  }
+  width: 95% !important;
 }
 @media (max-width: 767px) {
   .our_speciality-li {
@@ -11626,7 +11644,6 @@ body.open-menu, html.open-menu {
     height: 330px;
     flex: 0 0 33.333%;
     scroll-snap-align: center;
-    margin-left: 0;
   }
 }
 
