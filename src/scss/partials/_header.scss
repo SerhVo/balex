@@ -344,9 +344,10 @@ html.open-menu {
         height: 50px;
         width: 100%;
         background: url('../images/logo_balex-com.png'), rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
-        background-size: contain;
+        background-size: 40%, contain;
         background-repeat: no-repeat;
         background-position: center;
+        opacity: 0.95;
         z-index: 2;
         position: fixed;
         left: 0;
