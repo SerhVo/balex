@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
         menu.classList.remove('visible');
     }
 
-    if (scrollPosition >= 50) {
+    if (scrollPosition >= 100) {
         menuMobile.classList.add('visibleMobile');
     } else {
         menuMobile.classList.remove('visibleMobile');
