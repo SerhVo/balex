@@ -322,6 +322,10 @@ html.open-menu {
     display: none;
 }
 
+.mobile-menu_logo {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .mobile-menu-toggle {
         display: block;
@@ -334,13 +338,15 @@ html.open-menu {
         cursor: pointer;
     }
 
+
+
     .mobile-menu-toggle.visibleMobile {
-        height: 40px;
+        height: 50px;
         width: 100%;
-        background: rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
+        background: url('../images/logo_balex-com.png'), rgba(0, 0, 0, 0) linear-gradient(120deg, #757575 65%, #8e0404 35%) repeat scroll 0 0;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center;
         z-index: 2;
         position: fixed;
         left: 0;
