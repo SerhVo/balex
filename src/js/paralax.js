@@ -28,3 +28,6 @@
 //         window.scrollTo({ top: offset, behavior: 'smooth' }); // Плавно перемещаем страницу по вертикали
 //     });
 // });
+
+
+

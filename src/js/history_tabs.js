@@ -10,6 +10,7 @@ tabs.forEach(function(tab) {
     // Добавить класс 'active' и 'fade-in' к текущей карточке
     this.classList.add('active');
     this.classList.add('fade-in');
+    
   });
 });
 
@@ -28,3 +29,4 @@ tabs.forEach(function(tab) {
     this.classList.add('fade-in');
   });
 });
+
