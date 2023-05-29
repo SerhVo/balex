@@ -29,15 +29,15 @@
 
 .our_record-ul {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 150px 0;
 
-    @media  (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         padding: 130px 0;
     }
 
-    @media  (max-width: 767px) {
+    @media (max-width: 767px) {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
@@ -57,11 +57,11 @@
     position: relative;
     width: 270px;
 
-    @media  (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         padding: 0;
     }
 
-    @media  (max-width: 767px) {
+    @media (max-width: 767px) {
         width: calc(50% - 10px);
         /* Ширина элемента - половина контейнера с учетом отступов */
         margin-bottom: 20px;
@@ -72,23 +72,25 @@
     font-size: 40px;
     font-weight: 500;
 
-    @media  (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         font-size: 30px;
     }
 
-    @media  (max-width: 767px) {
+    @media (max-width: 767px) {
         font-size: 25px;
     }
 }
 
 .choose-box-p {
     font-size: 18px;
+    text-align: center;
 
-    @media  (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         font-size: 13px;
+        text-align: center;
     }
 
-    @media  (max-width: 767px) {
+    @media (max-width: 767px) {
         font-size: 14px;
         text-align: center;
     }

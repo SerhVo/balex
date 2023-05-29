@@ -45,7 +45,8 @@
     background-color: $bordo;
     color: $white;
     font-size: 35px;
-    // max-width: 600px;
+    width: 60%;
+    margin-left: auto;
     text-align: right;
 
     @media (min-width: 768px) and (max-width: 1199px) {
@@ -53,7 +54,8 @@
         background-color: $bordo;
         color: $white;
         font-size: 30px;
-        // max-width: 600px;
+        width: 60%;
+    margin-left: auto;
     }
 
     @media (max-width: 767px) {

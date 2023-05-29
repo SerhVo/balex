@@ -14,4 +14,5 @@ import './tab-container_bx.js';
 import './testimonials-carousel.js';
 import './our_partners-slider.js';
 import './scrollToTopButton.js';
+import './selectedLang.js';
 

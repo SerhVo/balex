@@ -19,7 +19,7 @@
 }
 
 .contact_details {
-    font-family: Rubik;
+    
     padding: 5px 0;
     height: 32px;
     margin-left: 190px;
@@ -96,7 +96,7 @@
     text-transform: uppercase;
     color: $main-text-color;
     font-size: 16px;
-    margin: 15px;
+    // margin: 15px;
     transition: $transition;
 
     @media (min-width: 768px) and (max-width: 1199px) {
@@ -219,13 +219,14 @@
 }
 
 .nav {
-    padding: 25px 100px;
+    padding: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     @media (min-width: 768px) and (max-width: 1199px) {
-        padding: 8px 100px;
+        padding: 8px 8px;
+
     }
 
     @media (max-width: 767px) {
@@ -402,4 +403,39 @@ html.open-menu {
     @media (max-width: 767px) {
         height: 30px;
     }
+}
+
+.flag-uk {
+    width: 30px;
+    height: 25px;
+    font-size: small;
+    border: 1px solid $lightgray;
+    padding: 0;
+    opacity: 0.5;
+    background-image: linear-gradient(rgb(0, 217, 255) 50%, yellow 50%);
+transition: opacity, font-weight 0.3s ease-in-out;
+}
+
+.flag-uk:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.flag-en {
+    width: 30px;
+    height: 25px;
+    font-size: small;
+    padding: 0;
+    opacity: 0.5;
+    border: 1px solid $lightgray;
+    background-image: url('../images/flag-en.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity, font-weight 0.3s ease-in-out;
+}
+
+.flag-en:hover {
+    opacity: 1;
+    font-weight: bold;
 }

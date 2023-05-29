@@ -38,10 +38,10 @@
                         <i class="far header_icon-set fa-envelope"></i>
                         <a href="mailto:info@goldenmile.com.ua" target="_blank">info@goldenmile.com.ua</a>
                     </li>
-                    <li class="header-icon">
-                        <i class="fas header_icon-set fa-clock"></i>
-                        Пн-Пт: 8:00 – 17:00
-                    </li>
+                    <li class="header-icon ">
+                        <i class="fas header_icon-set fa-clock"></i> 
+                        <p class="translate" data-lang-ua="Пн-Пт: 8:00 – 17:00" data-lang-en="Mon-Fri: 8:00 am - 5:00 pm">Пн-Пт: 8:00 – 17:00</p>  
+                            </li>
                 </ul>
                 <div class="face-top">
                     <a href="https://www.facebook.com/goldenmile.gmth" target="_blank">
@@ -54,21 +54,32 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            
+
         </div>
     </section>
     <header class="header sticky-menu">
         <div class="container_bx">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="./" class="nav__item">ГОЛОВНА</a></li>
-                    <li><a href="#our_record" class="nav__item">ПРО НАС</a></li>
-                    <li><a href="#services-tab" class="nav__item">ГРУПА КОМПАНIЙ</a></li>
-                    <li><a href="#contacts" class="nav__item"
+                    <li><a href="./" class="nav__item translate" data-lang-ua="ГОЛОВНА" data-lang-en="Home">ГОЛОВНА</a>
+                    </li>
+                    <li><a href="#our_record" class="nav__item translate" data-lang-ua="ПРО НАС"
+                            data-lang-en="ABOUT US">ПРО НАС</a></li>
+                    <li><a href="#services-tab" class="nav__item translate" data-lang-ua="ГРУПА КОМПАНIЙ"
+                            data-lang-en="THE GROUP OF COMPANIES">ГРУПА КОМПАНIЙ</a></li>
+                    <li><a href="#contacts" class="nav__item translate" data-lang-ua="КОНТАКТНА IНФОРМАЦIЯ"
+                            data-lang-en="CONTACT INFORMATION"
                             onclick="setTimeout(function(){location.href='#contacts';}, 100); return false;">КОНТАКТНА
-                            IНФОРМАЦIЯ</a>
+                            IНФОРМАЦIЯ</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn activeLang flag-uk" data-lang="ua">UA</button>
+                            <button class="lang-btn flag-en" data-lang="en">EN</button>
+                        </div>
                     </li>
                 </ul>
+
+
             </nav>
             <div class="mobile-menu container_bx">
                 <button class="mobile-menu-close container_bx">
@@ -91,10 +102,12 @@
             <div class="hero__container_bx">
                 <ul class="container_bx hero__container_bx-text bottom-to-top">
                     <li>
-                        <p class="hero__container_bx-p">Група компаній Balex Company</p>
+                        <p class="hero__container_bx-p translate" data-lang-ua="Група компаній Balex Company"
+                            data-lang-en="Balex Company Group">Група компаній Balex Company</p>
                     </li>
                     <li>
-                        <h1 class="hero__container_bx-h1">ВИРОБНИК ІНГРЕДІЄНТІВ ДЛЯ <br> ХАРЧОВОЇ ПРОМИСЛОВОСТІ</h1>
+                        <h1 class="hero__container_bx-h1 translate" data-lang-ua="ВИРОБНИК ІНГРЕДІЄНТІВ ДЛЯ ХАРЧОВОЇ ПРОМИСЛОВОСТІ"
+                            data-lang-en="PRODUCER OF INGREDIENTS FOR FOOD INDUSTRY">ВИРОБНИК ІНГРЕДІЄНТІВ ДЛЯ ХАРЧОВОЇ ПРОМИСЛОВОСТІ</h1>
                     </li>
                 </ul>
             </div>
@@ -108,25 +121,25 @@
                             <div class="counter choose-box-h4" data-count="21">
                                 <h4 class="choose-box-h4">0</h4>
                             </div>
-                            <p class="choose-box-p">рік на ринку</p>
+                            <p class="choose-box-p translate" data-lang-ua="рік на ринку" data-lang-en="years on the market">рік на ринку</p>
                         </li>
                         <li class="choose-box-content">
                             <div class="counter choose-box-h4" data-count="29">
                                 <h4 class="choose-box-h4">0</h4>
                             </div>
-                            <p class="choose-box-p">країн-партнерів</p>
+                            <p class="choose-box-p translate" data-lang-ua="країн-партнерів" data-lang-en="partner countries">країн-партнерів</p>
                         </li>
                         <li class="choose-box-content">
                             <div class="counter choose-box-h4" data-count="4393">
                                 <h4 class="choose-box-h4">0</h4>
                             </div>
-                            <p class="choose-box-p">клієнтів</p>
+                            <p class="choose-box-p translate" data-lang-ua="клієнтів" data-lang-en="customers">клієнтів</p>
                         </li>
                         <li class="choose-box-content">
                             <div class="counter choose-box-h4" data-count="7400">
                                 <h4>0</h4>
                             </div>
-                            <p class="choose-box-p">м2 складських приміщень</p>
+                            <p class="choose-box-p translate" data-lang-ua="м2 складських приміщень" data-lang-en="square meters of own warehouses">м2 складських приміщень</p>
                         </li>
                     </ul>
                 </div>
@@ -139,8 +152,16 @@
                 <div class="our_speciality-pos">
                     <ul class="our_speciality-list">
                         <li class="our_speciality-li">
-                            <h3 class="our_speciality-h3">Традиції</h3>
-                            <p class="our_speciality-p">У різні роки нашими підприємствами керувало багато видатних
+                            <h3 class="our_speciality-h3 translate" data-lang-ua="Традиції" data-lang-en="Traditions">Традиції</h3>
+                            <p class="our_speciality-p translate" data-lang-ua="У різні роки нашими підприємствами керувало багато видатних
+                                людей! І не зважаючи на низку змін, компанії завжди могли пишатися якістю своєї продукції, про що свідчать золоті
+                                медалі та нагороди міжнародних виставок. Сьогодні ми продовжуємо дотримуватися вікових традицій
+                                розвитку виробництва і торгівлі задля досягнення гармонії у відносинах з людьми, бізнесом і світом." data-lang-en="Many outstanding personalities managed our enterprises in different years! And
+                                        despite a number of changes, Сompanies could always be proud of the quality of
+                                        its products, as evidenced by gold medals and awards at international
+                                        exhibitions. Today, we continue to adhere to the age-old traditions of the
+                                        development of production and trade in order to achieve harmony in relations
+                                        with people, business and the world.">У різні роки нашими підприємствами керувало багато видатних
                                 людей! І
                                 не зважаючи на низку
                                 змін, компанії завжди могли пишатися якістю своєї продукції, про що свідчать золоті
@@ -151,8 +172,18 @@
                                 світом.</p>
                         </li>
                         <li class="our_speciality-li">
-                            <h3 class="our_speciality-h3">Розвиток</h3>
-                            <p class="our_speciality-p">BALEX company - це група Українських компаній, які динамічно
+                            <h3 class="our_speciality-h3 translate" data-lang-ua="Розвиток" data-lang-en="Development">Розвиток</h3>
+                            <p class="our_speciality-p translate" data-lang-ua="BALEX company - це група Українських компаній, які динамічно
+                                розвиваються,
+                                поєднуючи досвід та передові технології виробництва. Для постійного зростання та
+                                сталого успіху наших клієнтів ми пропонуємо широкий комплекс товарів і повну
+                                технологічну підтримку. Впроваджені на підприємствах групи сучасні системи
+                                безпеки та управління є гарантією завжди якісного та стабільного результату." data-lang-en="BALEX company is a group of Ukrainian companies that are dynamically developing,
+                                        combining experience and advanced production technologies. For the constant
+                                        growth and sustainable success of our customers, we offer a wide range of
+                                        products and full technological support. The modern safety and management
+                                        systems implemented at the group's enterprises are the guarantee of always
+                                        high-quality and stable results.">BALEX company - це група Українських компаній, які динамічно
                                 розвиваються,
                                 поєднуючи досвід та передові технології виробництва. Для постійного зростання та
                                 сталого успіху наших клієнтів ми пропонуємо широкий комплекс товарів і повну
@@ -160,8 +191,19 @@
                                 безпеки та управління є гарантією завжди якісного та стабільного результату.</p>
                         </li>
                         <li class="our_speciality-li">
-                            <h3 class="our_speciality-h3">Гармонія</h3>
-                            <p class="our_speciality-p">Одна з головних місій групи компаній BALEX - дарувати людям
+                            <h3 class="our_speciality-h3 translate" data-lang-ua="Гармонія" data-lang-en="Harmony">Гармонія</h3>
+                            <p class="our_speciality-p translate" data-lang-ua="Одна з головних місій групи компаній BALEX - дарувати людям
+                                смачне
+                                задоволення,
+                                наповнюючи життя первісною енергією Природи. Саме тут традиційні рецепти за
+                                допомогою сучасних технологій та новітнього обладнання перетворюються на якісний
+                                продукт, що відповідає світовому рівню, задовільняє потреби професійних
+                                споживачів та надає можливість створювати власні шедеври вдома." data-lang-en="One of the main missions of the BALEX group of companies is to give people
+                                        delicious pleasure, filling life with the original energy of Nature. It is here
+                                        that traditional recipes are transformed with the help of modern technologies
+                                        and the latest equipment into a quality product that meets the world level,
+                                        meets the needs of professional consumers and provides an opportunity to create
+                                        your own masterpieces at home.">Одна з головних місій групи компаній BALEX - дарувати людям
                                 смачне
                                 задоволення,
                                 наповнюючи життя первісною енергією Природи. Саме тут традиційні рецепти за
@@ -203,7 +245,7 @@
                         </li>
                         <li class="tab">
                             <a class="tab-text">1782-1875</a>
-                        </li>                       
+                        </li>
                     </ul>
 
 
