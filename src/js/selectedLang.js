@@ -51,6 +51,18 @@ langButtons.forEach((button) => {
             element.textContent = langText;
         });
 
+        // Перебираем все элементы с классом "translate" и меняем их атрибут "placeholder"
+        translateElements.forEach((element) => {
+            const placeholderText = element.getAttribute(`data-lang-${selectedLang}`);
+            element.placeholder = placeholderText;
+        });
+
+        // Перебираем все элементы с классом "translate" и меняем их атрибут "value"
+        translateElements.forEach((element) => {
+            const valueText = element.getAttribute(`data-lang-${selectedLang}`);
+            element.value = valueText;
+        });
+
         // Переключение картинок
         const imageElements = document.querySelectorAll('.image');
         imageElements.forEach((element) => {

@@ -69,3 +69,11 @@
 .contact_me-btn:active {
     background-color: $green-main;
 }
+
+.contact_me_box-privesys {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+}
