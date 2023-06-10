@@ -19,7 +19,7 @@
 }
 
 .contact_details {
-    
+
     padding: 5px 0;
     height: 32px;
     margin-left: 190px;
@@ -33,7 +33,7 @@
     @media (min-width: 768px) and (max-width: 1199px) {
         margin-left: 130px;
         font-weight: 300;
-         font-size: 10px;
+        font-size: 10px;
     }
 
     @media (max-width: 767px) {
@@ -414,7 +414,7 @@ html.open-menu {
     padding: 0;
     opacity: 0.3;
     background-image: linear-gradient(rgb(0, 217, 255) 50%, yellow 50%);
-transition: opacity, font-weight 0.3s ease-in-out;
+    transition: opacity, font-weight 0.3s ease-in-out;
 }
 
 .flag-uk:hover {
@@ -439,4 +439,68 @@ transition: opacity, font-weight 0.3s ease-in-out;
 .flag-en:hover {
     opacity: 1;
     font-weight: bold;
+}
+
+
+.language-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.flag-uk {
+  color: #000;
+}
+
+.flag-en {
+  color: #000;
+}
+
+.flag-uk.activeLang ~ .toggle {
+  background-color: #a9b63f;
+}
+
+.flag-en.activeLang ~ .toggle {
+  background-color: #a9b63f;
+}
+
+.flag-uk.activeLang ~ .toggle:before {
+  transform: translateX(0);
+}
+
+.flag-en.activeLang ~ .toggle:before {
+  transform: translateX(20px);
 }
