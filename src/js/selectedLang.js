@@ -71,3 +71,4 @@ langButtons.forEach((button) => {
         });
     });
 });
+
